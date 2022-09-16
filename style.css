@@ -568,7 +568,11 @@ h3{
     padding: 10px;
 
 }
-
+.footer svg{
+    color: white;
+    width: 90px;
+    height: 60px;
+}
 /*mediaqueries*/
 @media only screen and (max-width: 768px){
 
