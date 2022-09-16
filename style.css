@@ -257,8 +257,16 @@ h3{
     padding: 100px;
     text-align: center;
     margin-left: 500px;
+    animation-name: titulo4;
+    animation-duration: 10s;
+}   
+@keyframes titulo4 {
+    0%{background-color: aqua;}
+    50%{background-color: white;}
+    75%{font-family: Arial, Helvetica, sans-serif;}
+    90%{border-radius: 30%;}
+    
 }
-
 .packbasico1{
     display: flex;
     flex-direction: column;
@@ -369,6 +377,15 @@ h3{
     padding: 100px;
     text-align: center;
     margin-left: 500px;
+    animation-name: titulo5;
+    animation-duration: 10s;
+}   
+@keyframes titulo5 {
+    0%{background-color: aqua;}
+    50%{background-color: white;}
+    75%{font-family: Arial, Helvetica, sans-serif;}
+    90%{border-radius: 30%;}
+    
 }
 
 .imagenmatgeo{
