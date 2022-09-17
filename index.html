@@ -9,33 +9,33 @@
     <link rel="stylesheet" href="style.css">
     <title>PARQUE CHACA Producciones</title>
 </head>
-<body class="body">
-  <nav class="navbar navbar-expand-lg navbar-dark navContainer">
-    <div class="container-fluid navContainerdos">
-      <a class="navbar-brand navLogo" href="logo">
-        <img src="./IMAGENES/logo.png" alt="">
-      </a>
-      <div class="collapse navbar-collapse navLista" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0 navLinks">
-          <li class="nav-item">
-            <a class="nav-link active quienesomos" aria-current="page" href="#quienes-somos">QUIENES SOMOS</a>
-          </li>
-          <li class="nav-item">
+    <body class="body">
+      <!-- PRIMERA PARTE -->
+<header>   
+  <nav class="container">
+   <nav class="row">
+    <nav class="navbar navbar-expand-lg navbar-dark navContainer">
+      <div class="container-fluid navContainerdos">
+        <a class="navbar-brand navLogo" href="#">
+          <img src="./IMAGENES/logo.png" alt="milogo">
+        </a>
+        <button class="navbar-toggler button" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon buttonIcon"></span>
+        </button>
+        <div class="collapse navbar-collapse navLista" id="navbarNavAltMarkup">
+          <div class="navbar-nav navLinks">
+            <a class="nav-link" active href="#quienes-somos">QUIENES SOMOS</a>
             <a class="nav-link" href="proximoseventos.html">PROXIMOS EVENTOS</a>
-          </li>
-          <li class="nav-item">
             <a class="nav-link" href="#nuestros-servicios">NUESTROS SERVICIOS</a>
-          </li>
-          <li class="nav-item">
             <a class="nav-link" href="#dj-residentes">RESIDENTS</a>
-          </li>
-          <li class="nav-item">
             <a class="nav-link" href="#teestamos-buscando">TE ESTAMOS BUSCANDO</a>
-          </li>
-        </ul>
+          </div>
+        </div>
       </div>
-    </div>
+    </nav> 
   </nav>
+ </nav>
+</header>   
 
     <div class="container containerHernan">
         <div class="row d-flex justify-content-center">
@@ -85,12 +85,15 @@
             <option value="4">Forja x BNP Open Life Dia 2 (Cordoba, Argentina) 9 HS SET - Hernan Cattaneo</option>
         </select>
 </section>
-<h2 id="quienes-somos" class="titulo2">¿QUIENES SOMOS?</h2>  
-<h3 class="tresamigos">SOMOS TRES AMIGOS APASIONADOS POR LA MUSICA ELECTRONICA EN BUSCA DEL MEJOR TALENTO LOCAL</h3>
+
+<!-- SEGUNDA PARTE -->
+<div id="quienes-somos" class="shadow-none p-3 mb-5 d-flex justify-content-center titulodos">
+  <h3>SOMOS TRES AMIGOS APASIONADOS POR LA MUSICA ELECTRONICA EN BUSCA DEL MEJOR TALENTO LOCAL</h3>
+</div>
 <div class="container segundocarrusel">
     <div class="row d-flex justify-content-center">
         <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
+            <div class="carousel-inner fotostresamigos">
               <div class="carousel-item active">
                 <img src="./IMAGENES/djresidente1.webp" class="d-block w-100" alt="...">
               </div>
@@ -106,93 +109,120 @@
     </div>
 </div>  
 
-<h2 class="titulo3">PROXIMOS EVENTOS</h2>
-<nav class="container3">
-    <h3 class="primerevento">LUCILE CLUB - BIRTHDAY JUAN Y CLAUDIO 19/08</h3>
-    <nav class="proximoseventos">
-        <ul>
-            <li><a href="./proximoseventos.html">BIRTHDAY</a></li>
-        </ul>
-    </nav>
-    <h3 class="segundoevento">POST CLUB LUCILE - PH CHACABUCO</h3>
-    <nav class="proximos__eventos">
-        <ul>
-            <li><a href="./proximoseventos.html">AFTERPARQUECHACA</a></li>
-        </ul>
-    </nav>  
-</nav>
-    <h2 id="nuestros-servicios" class="titulo4">NUESTROS SERVICIOS</h2>
-<section class="packbasico1">
-    <h3 class="packbasico">PACK BASICO:</h3>
-    <h3 class="packbasicotexto">Incluye armado de line up, gestión de locación de evento, tramitación de permisos ante organismos gubernalmentales, equipo de sonidos y luces. </h3>
-    <select class="pack__basico">
-        <option value="select">OPCIONES</option>
-        <option value="1">ARAOZ CLUB</option>
-        <option value="2">THE BOW</option>
-        <option value="3">CLUB LUCILE</option>
-    </select>
-    <iframe class="video1" width="350" height="350" src="https://www.youtube.com/embed/rGVb-Irqtgg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</section>
+<!-- TERCERA PARTE  -->
+<div class="servicios">
+  <h3 id="nuestros-servicios" class="p-5 m5 text-light text-center">LOS MEJORES PAQUETES DE SERVICIO PARA UNA GRAN EXPERIENCIA</h3>
+  <div class="row row-cols-1 row-cols-md-3 g-4  containerBasico">
+    <div class="col">
+      <div class="card serviciosUno">
+        <iframe width="100%" height="fs-100%" src="https://www.youtube.com/embed/HaBa4qoQ9a0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div class="card-body text-center basicolista ">
+          <h5 class="card-title">BASICO</h5>
+          <p class="card-text"> INCLUYE ARMADO DE LINE UP, LUGAR DE EVENTO, TRAMITACIÓN DE PERMISOS, EQUIPO DE SONIDO, LUCES Y AMBIENTACIÓN</p>
+          <select>
+            <option value="select">OPCIONES</option>
+            <option value="1">ARAOZ CLUB</option>
+            <option value="2">THE BOW</option>
+            <option value="3">CLUB LUCILE</option>
+        </select>
+        </div>
+      </div>
+    </div>
+    <div class="col containerIntermedio">
+      <div class="card serviciosDos">
+        <iframe width="fs-100%" height="fs-100%" src="https://www.youtube.com/embed/1VqzZxusRu8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div class="card-body text-center intermediolista">
+          <h5 class="card-title">INTERMEDIO</h5>
+          <p class="card-text">INCLUYE ARMADO DE LINE UP, LUGAR DE EVENTO, TRAMITACIÓN DE PERMISOS, EQUIPO DE SONIDO Y LUCES, VISUALES Y STAFF GOGO DANCER </p>
+          <select>
+            <option value="select">OPCIONES</option>
+            <option value="1">ARAOZ CLUB</option>
+            <option value="2">THE BOW</option>
+            <option value="3">CLUB LUCILE</option>
+        </select>
+        </div>
+      </div>
+    </div>
+    <div class="col containerFull">
+      <div class="card serviciosTres">
+        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/5S-sygGQi0U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div class="card-body text-center fullLista">
+          <h5 class="card-title">FULL</h5>
+          <p class="card-text">INCLUYE ARMADO DE LINE UP,LUGAR, TRAMITACIÓN DE PERMISOS, EQUIPO DE SONIDOS Y LUCES, PUESTA EN ESCENA DE VISUALES, EQUIPO DE GOGO DANCER, Y POST EVENTO PRINCIPAL ARMADO DE EVENTO EN EL AFTER OFICIAL DE PC PRODUCCIONES (CAP. MAX 80 PERSONAS)</p>
+          <select>
+            <option value="select">OPCIONES</option>
+            <option value="1">ARAOZ CLUB</option>
+            <option value="2">THE BOW</option>
+            <option value="3">CLUB LUCILE</option>
+        </select>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+</div>
 
-<section class="packintermedio1">
-    <h3 class="packintermedio">PACK INTERMEDIO:</h3>
-    <h3 class="packintermediotexto">Incluye armado de line up, gestión de locación de evento, tramitación de permisos ante organismos gubernalmentales, equipo de sonidos y luces, puesta en escena de visuales y equipo de gogo dancer. </h3>
-    <select class="pack__intermedio">
-        <option value="select">OPCIONES</option>
-        <option value="1">ARAOZ CLUB</option>
-        <option value="2">THE BOW</option>
-        <option value="3">CLUB LUCILE</option>
-    </select>
-    <iframe class="video2" width="350" height="350" src="https://www.youtube.com/embed/VRnbsk8joMY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</section>
+<!--CUARTA PARTE -->
+<div class="containercuatro">
+  <div class="shadow-none p-3 mb-5 d-flex justify-content-center titulodos">
+    <h3>NUESTRO AMIGO NICK...</h3>
+  </div>
+    <div class="row justify-content-center">
+      <div class="col-lg-12"></div>
+        <div class="card text-white mb-3 containerWarren" style="max-width: 100%;">
+          <img src="./IMAGENES/warren.jpg" alt="">
+          <div class="card-header tituloWarren">NICK WARREN</div>
+          <div class="card-body">
+            <iframe width="70%" height="50%" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/312595839&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/nicolasrada" title="Nicolas Rada" target="_blank" style="color: #cccccc; text-decoration: none;">Nicolas Rada</a> · <a href="https://soundcloud.com/nicolasrada/desert-in-me-terrace-11032017" title="Desert In Me Sahar Z, Mariano Mellino, Facundo Mohrr, Interaxxis / Terrace 11.03.2017" target="_blank" style="color: #cccccc; text-decoration: none;">Desert In Me Sahar Z, Mariano Mellino, Facundo Mohrr, Interaxxis / Terrace 11.03.2017</a></div>
+        </div>
+      </div>  
+    </div>
+    
+    <div class="shadow-none p-3 mb-5 d-flex justify-content-center titulodos">
+      <h3>NUESTRO AMIGO RADA...</h3>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-lg-12"></div>
+        <div class="card text-white mb-3 containerNicorada" style="max-width: 100%;">
+          <img src="./IMAGENES/nicorada.jpg" alt="">
+          <div class="card-header tituloRada">NICOLAS RADA</div>
+          <div class="card-body">
+            <iframe width="70%" height="50%" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/312595839&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/nicolasrada" title="Nicolas Rada" target="_blank" style="color: #cccccc; text-decoration: none;">Nicolas Rada</a> · <a href="https://soundcloud.com/nicolasrada/desert-in-me-terrace-11032017" title="Desert In Me Sahar Z, Mariano Mellino, Facundo Mohrr, Interaxxis / Terrace 11.03.2017" target="_blank" style="color: #cccccc; text-decoration: none;">Desert In Me Sahar Z, Mariano Mellino, Facundo Mohrr, Interaxxis / Terrace 11.03.2017</a></div>
+        </div>
+      </div>  
+    </div>
+  </div>
+</div>
 
 
-<section class="packfull1">
-    <h3 class="packfull">PACK FULL:</h3>
-    <h3 class="packfulltexto1">Incluye armado de line up, gestión de locación de evento, tramitación de permisos ante organismos gubernalmentales, equipo de sonidos y luces, puesta en escena de visuales y equipo de gogo dancer.</h3>
-    <h3 class="packfulltexto2">Gestión integral de AFTER post evento principal, capacidad máxima de 80 personas en el after oficial de PC PRODUCCIONES.</h3>
-    <select class="pack__full">
-        <option value="select">OPCIONES</option>
-        <option value="1">ARAOZ CLUB</option>
-        <option value="2">THE BOW</option>
-        <option value="3">CLUB LUCILE</option>
-        <option value="4">DOWNTEMPO</option>
-    </select>
-    <iframe class="video3" width="350" height="350" src="https://www.youtube.com/embed/xBfMF-e7zvg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</section>
 
-<h2 id="dj-residentes" class="titulo5">DJ RESIDENTES</h2>
-<nav>
-    <img class="imagenmatgeo" src="./IMAGENES/MATGEO.jpg" alt="MATGEO">
-</nav>
-<h2 class="textomatgeo">MATGEO: dueño de una mezcla exquisitamente fina de progressive house, se ha presentado a lo largo de su carrera en los mejores venus de la Ciudad, entre ellos THE BOW, Club Araoz, Río Electronic Music, productor de tracks que han sido supporteados por referentes cómo Mariano Mellino, CID INC.</h2>
-<section class="setmatgeo">
-    <iframe width="70%" height="70%" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1321875337&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/user-263159640" title="MatGeo" target="_blank" style="color: #cccccc; text-decoration: none;">MatGeo</a> · <a href="https://soundcloud.com/user-263159640/amour" title="Amour" target="_blank" style="color: #cccccc; text-decoration: none;">Amour</a></div></section>
-</section>
-<nav>
-    <img class="imagenjcr" src="./IMAGENES/NICO RADA.jpg" alt="J CR">
-</nav>
-<h2 class="textojcr">J CR: Se ha  destacado con continuas presentaciones en distintos eventos under a lo largo de la Provincia de Buenos Aires lo cual le permitió tener su debut en el templo de la música: CROBAR CLUB. Se destaca por la prolijidad de sus sets, variando en cuanto a géneros que pueden llevar desde el progressive house hasta techno.</h2>
-<section class="setjcr">
-    <iframe width="60%" height="60%" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/312595839&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/nicolasrada" title="Nicolas Rada" target="_blank" style="color: #cccccc; text-decoration: none;">Nicolas Rada</a> · <a href="https://soundcloud.com/nicolasrada/desert-in-me-terrace-11032017" title="Desert In Me Sahar Z, Mariano Mellino, Facundo Mohrr, Interaxxis / Terrace 11.03.2017" target="_blank" style="color: #cccccc; text-decoration: none;">Desert In Me Sahar Z, Mariano Mellino, Facundo Mohrr, Interaxxis / Terrace 11.03.2017</a></div>
-</section>
+<!-- QUINTA PARTE  -->
 
-<h3 id="teestamos-buscando" class="titulo6">TE ESTAMOS BUSCANDO</h3>
-<h4 class="texto6">ENVIANOS TU PERFIL DE SOUNCLOUD</h4>
-<footer class="footer">
-  <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
-    <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
-  </svg> 
-  <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
-    <path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"/>
-  </svg>
-  <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" fill="currentColor" class="bi bi-envelope-fill" viewBox="0 0 16 16">
-    <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z"/>
-  </svg>
-  <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
-    <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
-  </svg>
-</footer>
+<div id="teestamos-buscando" class="container-fluid containerFooter">
+  <div class="row p-4 pb-2 bg-dark text-white d-flex justify-content-center">
+    <div class="col-xs-12 col-md-6 col-lg-3 fs-100%">
+      <p class="mb-4">TE ESTAMOS BUSCANDO: ENVIANOS TU PERFIL DE SOUNCLOUD</p>
+      <p class="text-secondary"> CABA - BSAS </p>
+    </div>
+    <div class="col-xs-12 pb-3 col-md-6 col-lg-3">
+      <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+        <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+      </svg> 
+    </div>
+    <div class="col-xs-12 pb-3 col-md-6 col-lg-3">
+      <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
+        <path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"/>
+      </svg>
+    </div>
+    <div class="col-xs-12 pb-3 col-md-6 col-lg-3">
+      <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+        <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+      </svg>
+    </div>
+  <div class="col-xs12 pt-5">
+    <p class="text-black text-center">Copyright - All rights reserverd 2022</p>
+  </div>
+</div>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>
