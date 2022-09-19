@@ -33,7 +33,7 @@ h3{
 } 
 
 .fotosHernan{
-    border-radius: 35%;
+    border-radius: 25%;
 }
 
 .topfive{
@@ -165,6 +165,24 @@ h3{
     width: 100%;
 }
 
+/* QUINTA PARTE */
+.eventouno{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.eventouno img{
+    width: 80%;
+}
+
+.eventodos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.eventodos img{
+    width: 80%;
+}
 /*PROXIMOS EVENTOS*/ 
 
 .bodyproximoseventos{
@@ -204,133 +222,6 @@ h3{
 
 }
 
-
-/* .texto__uno{
-    background-color: black;
-    color: white;
-}
-
-.h1pe{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    border-radius: 50%;
-    border: 0.5px solid white;
-    text-decoration: none;
-    color: white;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 200;
-    width: 300px;
-    right: 300px;
-    padding: 90px;
-    text-align: center;
-    margin-left: 500px;
-    animation-name: proximoseventos;
-    animation-duration: 5s;
-}
-@keyframes proximoseventos {
-    0%{background-color: aqua;}
-    50%{background-color: white;}
-    75%{font-family: Arial, Helvetica, sans-serif;}
-    90%{border-radius: 30%;}
-}
-
-.h2pe{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    color: white;
-    margin: 10px;
-    padding: 10px;
-}
-.h2__pe{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    color: white;
-    margin: 10px;
-    padding: 10px;
-}
-
-.primerGrid{
-    display: grid;
-    grid-template-columns: 2fr;
-    grid-template-rows: 1fr;
-    justify-items: center;
-    grid-template-areas:
-    "videoUno mapaUno";
-}
-
-.videoUno{
-    grid-area: videoUno;
-    margin: 10px;
-    padding: 10px;
-}
-
-.mapaUno{
-    grid-area: mapaUno;
-    margin: 10px;
-    padding: 10px;
-}
-
-.h3pe{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    color: white;
-    margin: 10px;
-    padding: 10px;
-}
-.h3__pe{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    color: white;
-    margin: 10px;
-    padding: 10px;
-}
-
-.segundoGrid{
-    display: grid;
-    grid-template-columns: 2fr;
-    grid-template-rows: 1fr;
-    justify-items: center;
-    grid-template-areas:
-    "videoDos mapaDos";
-}
-
-.videoDos{
-    grid-area: videoDos;
-    margin: 10px;
-    padding: 10px;
-
-}
-
-.mapaDos{
-    grid-area: mapaDos;
-    margin: 10px;
-    padding: 10px;
-
-}
-.footer svg{
-    color: white;
-    width: 90px;
-    height: 60px;
-} */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*mediaqueries*/ 
 @media only screen and (max-width: 768px){
 
@@ -342,19 +233,17 @@ h3{
     margin: 0;
     padding: 0;
 }
+/* PRIMERA PARTE */
+.navLogo img{
+    width: 150px;
+}
 
 .navLista{
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
 }
-.containerHernan{
-    margin-top: 50px;
-}
-
-.navLogo img{
-    width: 150px;
-} 
 
 .topfive{
     display: grid;
@@ -372,6 +261,10 @@ h3{
     grid-area: topfivespotify;
 }
 
+.topfive .topfivespotify option{
+    height: 40%;
+} 
+
 .recomendados{
     display: grid;
     grid-template-columns: 1fr;
@@ -386,301 +279,38 @@ h3{
 
 .recomendadossouncloud{
     grid-area: recomendadossouncloud;
-    width: 150px;
-}
-
-.tresamigos1{
-    grid-template-columns: 2fr;
-    grid-template-rows: 2fr;
-    align-items: left;
-    grid-template-areas: 
-    "titulo 2 titulo2"
-    "tresamigos tresamigos";
-}
-
-.titulo2{
-    grid-area: titulo2;
-    margin-left: 100px;
     width: 100px;
+    margin-bottom: 25px;
 }
 
-.tresamigos{
-    grid-area: tresamigos;
-    margin: 10px;
-    padding: 10px;
-}
+/* SEGUNDA PARTE  */
 
-.tresamigosFoto{
-    margin-left: 0;
-    padding: 60px;
-}
-
-.tresamigosFoto img{
-    width: 250px;
-    height: 200px;
-}
-
-.container3{
-    display: grid;
-    grid-template-columns: 2fr;
-    grid-template-rows: 4fr;
-    grid-template-areas: 
-    "primerevento primerevento"
-    "proximoseventos proximoseventos"
-    "segundoevento segundoevento"
-    "proximoseventos2 proximoseventos2";
-}
-.primerevento{
-    grid-area: primerevento;
-}
-.proximoseventos{
-    grid-area: proximoseventos;
-}
-.segundoevento{
-    grid-area: segundoevento;
-}
-.proximos__eventos{
-    grid-area: proximoseventos2;
-    margin: 10px;
-    padding: 40px;
-}
-.titulo3{
-    margin-left: 100px;
-    width: 100px;
-}
-.primerevento{
-    font-size: 150%;
-    width: 200px;
-
-}
-.proximoseventos{
-    display: flex;
-    flex-direction: column;
-    font-size: 100%;
-    width: 150px;
-    margin: 10px;
-    padding: 5px;
-}
-.segundoevento{
-    font-size: 150%;
-    width: 200px;
-
-}
-.proximos__eventos{
-    display: flex;
-    flex-direction: column;
-    font-size: 100%;
-    width: 150px;
-    margin: 10px;
-
-}
-.titulo4{
-    margin-left: 100px;
-    width: 100px;
-}
-.packbasico1{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items:flex-end;
-    text-align: center;
-    width: 100px;
-
-
-}
-.packbasicotexto{
-    font-size: 150%;
-    width: 200px;
-
-}
-.packbasico{
-    font-size: 150%;
-
-}
-
-.pack__basico{
-    font-size: 100%;
-    background-color:black;
-    color: white;
-    margin: 50px;
-
-}
-
-.packbasico1 .video1{
-    justify-content: left;
-
-}
-
-.packbasico1 .video1{
-    width: 290px;
-    height: 290px;
-    margin: 20px;
-    padding: 10px;
-
-}
-.packintermedio1{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items:flex-end;
-    text-align: center;
-    width: 100px;
-
-}
-
-.packintermediotexto{
-    font-size: 150%;
-    width: 200px;
-
-}
-
-.packintermedio{
-    font-size: 150%;
-
-}
-.pack__intermedio{
-    font-size: 100%;
-    background-color:black;
-    color: white;
-    margin: 50px;    
-
-}
-.packintermedio1 .video2{
-    width: 290px;
-    height: 290px;
-    margin: 20px;
-    padding: 10px;
-
-}
-.packfull1{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items:flex-end;
-    text-align: center;
-    width: 100px;
-
-}
-.packfull{
-    font-size: 150%;
-
-}
-.packfulltexto1{
-    font-size: 150%;
-    width: 200px;
-
-}
-.packfulltexto2{
-    font-size: 150%;
-    width: 200px;
-
-}
-
-.pack__full{
-    font-size: 100%;
-    background-color:black;
-    color: white;
-    margin: 50px;
-
-}
-
-.packfull1 .video3{
-    width: 290px;
-    height: 290px;
-    margin: 20px;
-    padding: 10px;
-
-}
-
-.titulo5{
-    margin-left: 100px;
-    width: 100px;
-}
-.containerMatgeo{
-    padding: 10px;
-    margin: 10px;
-}
-.containerMatgeo iframe{
-    height: 50%;
-    width: 70%;
-}
-
-.containerNicorada{
-    padding: 10px;
-    margin: 10px;
-}
-.containerNicorada iframe{
-    height: 50%;
-    width: 70%;
-}
-.titulo6{
-    margin-left: 100px;
-    width: 100px;
-}
-
-.footer img{
-    width: 50px;
-    height: 30px;
+.titulodos h3{
+    margin: 15px;
+    padding: 15px;
 }
 
 
-
-/* proximos eventos */
-.regreso{
-    display: flex;
-    flex-direction: row;
-    justify-content: left;
-    color: rgb(210, 48, 48);
-    font-size: 250%;
-
-}
-.h1pe{
-    width: 250px;
-    justify-content: center;
-    align-items: center;
-    margin-left: 5px;
-    font-size: 150%;
-}
-.primerGrid{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+/* TERCERA PARTE  */
+.servicios{
+    width: 98%;
 }
 
-.primerGrid .videoUno{
-    width: 400px;
-    
+.container__basico{
+    margin-bottom: 38px;
 }
 
-.h2pe{
-    font-size: 250%;
+.containerIntermedio{
+    margin-bottom: 38px;
 }
 
-.h2__pe{
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-size: 200%;
-}
-.h3pe{
-    font-size: 250%;
-}
-.h3__pe{
-    align-items: center;
-    justify-content: center;
-    font-size: 200%;
-}
-.segundoGrid{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.containerFull{
+    margin-bottom: 38px;
 }
 
-.segundoGrid .videoDos{
-    width: 400px;
+/* CUARTA PARTE */
+
+.containercuatro{
+    width: 98%;
 }
 }
