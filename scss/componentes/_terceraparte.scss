@@ -1,0 +1,37 @@
+.titulotres h3{
+    background-color: darken($c-principal, 80%);
+    border: nth($border-radius , 1 );
+    margin-top: 20px;
+}
+
+.servicios{
+    width: nth($width, 3 );
+    border: none;
+}
+.serviciosUno{
+    border: none;
+}
+.serviciosDos{
+    border: none;
+}
+.serviciosTres{
+    border: none;
+}
+
+.basicolista{
+    background-color: darken($c-principal, 80%);
+    color: white;
+    height: 170px; 
+}
+.intermediolista{
+    background-color: black;
+    color: nth($colores, 2 );
+    height: nth($height, 4 ); 
+}
+
+.fullLista{
+    border: none;
+    background-color: darken($c-principal, 90%);
+    color: nth($colores, 2 );
+    height: nth($height , 4); 
+}
