@@ -1,5 +1,6 @@
 .containercuatro{
     width: nth($width , 3 );
+    margin: nth($margin, 2 );
 }
 .containerNicorada{
     border: solid 1px black;
@@ -9,11 +10,11 @@
     font-family: Arial, Helvetica, sans-serif;
     color: nth($colores, 1 );
     background-color: darken($c-principal , 80%);
-    width: nth($width, 4 );
+    width: nth($width, 3 );
 }
 .containerNicorada img{
     border-radius: nth($border-radius, 3 );
-    width: nth($width , 4 );
+    width: nth($width , 3 );
 
 }
 .containerWarren{
@@ -24,9 +25,9 @@
     font-family: Arial, Helvetica, sans-serif;
     color: nth($colores, 1 );
     background-color: darken($c-principal, 80%);
-    width: nth($width, 4 );
+    width: nth($width, 3 );
 }
 .containerWarren img{
     border-radius: nth($border-radius, 3);
-    width: nth($width , 4 );
+    width: nth($width , 3 );
 }
