@@ -12,8 +12,7 @@
     width: nth($width, 3 );
 }
 .containerNicorada img{
-    border-radius: nth($border-radius, 3 );
-    width: nth($width , 4 );
+    @extend %borderwidth;
 
 }
 .containerWarren{
@@ -27,6 +26,5 @@
     width: nth($width, 4 );
 }
 .containerWarren img{
-    border-radius: nth($border-radius, 3);
-    width: nth($width , 4 );
+    @extend %borderwidth;
 }

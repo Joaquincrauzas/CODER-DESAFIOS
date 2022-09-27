@@ -10,7 +10,13 @@ html{
 .body{
     background-color: darken($c-principal, 80%);
 }
-
+h1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
 h3{
     margin: nth($margin , 3 );
     padding: nth($padding , 4);
@@ -24,7 +30,7 @@ h3{
     width: nth($width, 7 );
 }
 .navLista .navLinks a{
-    font-size: nth($font-size, 4 );
+    font-size: nth($font-size, 2 );
     border: solid 2px white;
     margin: nth($margin, 5);
     color: nth($colores, 1 )
@@ -35,16 +41,10 @@ h3{
 }
 
 .topfive{
-    display: flex;
+    @extend %flexrow;
     flex-direction: row;
-    justify-content: end;
-    color: nth($colores, 1 );
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: nth($font-size, 2 );
-    text-decoration: none;
-    margin: nth($margin , 6 );
-    padding: nth($padding , 6 );
 }
+
 
 .topfiveH3{
     margin: nth($margin , 2 );
@@ -59,15 +59,9 @@ h3{
 }
 
 .recomendados{
-    display: flex;
-    flex-direction: column;
+    @extend %flexrow;
     justify-content: start;
-    color: nth($colores, 1 );
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: nth($font-size, 2 );
-    text-decoration: none;
-    margin: nth($margin, 6 );
-    padding: nth($padding , 6 ) ;
+
 }
 
 .recomendadosH3{

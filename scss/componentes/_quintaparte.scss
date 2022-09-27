@@ -1,17 +1,13 @@
 .eventouno{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @include flexcolumn()
 }
 .eventouno img{
-    width: nth($width , 1 )
+    width: 80%;
 }
 
 .eventodos{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @include flexcolumn()
 }
 .eventodos img{
-    width: nth($width , 1 );
+    width: 80%;
 }

@@ -9,29 +9,29 @@
     border: none;
 }
 .serviciosUno{
-    border: none;
+    @extend %bordernone;
 }
 .serviciosDos{
-    border: none;
+    @extend %bordernone;
 }
 .serviciosTres{
-    border: none;
+    @extend %bordernone;
 }
 
 .basicolista{
-    background-color: darken($c-principal, 80%);
-    color: white;
+    background-color: map-get($map: $terceraparte, $key: bg-principal );
+    color: map-get($map: $terceraparte, $key: color );
     height: 170px; 
 }
 .intermediolista{
-    background-color: black;
-    color: nth($colores, 2 );
+    background-color: map-get($map: $terceraparte, $key: bg-principal );
+    color: map-get($map: $terceraparte, $key: color );
     height: nth($height, 4 ); 
 }
 
 .fullLista{
     border: none;
-    background-color: darken($c-principal, 90%);
-    color: nth($colores, 2 );
+    background-color: map-get($map: $terceraparte, $key: bg-principal );
+    color: map-get($map: $terceraparte, $key: color );
     height: nth($height , 4); 
 }
